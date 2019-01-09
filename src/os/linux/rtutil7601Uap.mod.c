@@ -45,7 +45,7 @@ __attribute__((section("__versions"))) = {
 	{ 0x54be2cdd, __VMLINUX_SYMBOL_STR(netif_rx) },
 	{ 0x275ef902, __VMLINUX_SYMBOL_STR(__init_waitqueue_head) },
 	{ 0xffd5a395, __VMLINUX_SYMBOL_STR(default_wake_function) },
-	{ 0xf7528dc0, __VMLINUX_SYMBOL_STR(vfs_read) },
+	{ 0xf7528dc0, __VMLINUX_SYMBOL_STR(kernel_read) },
 	{ 0xfa2a45e, __VMLINUX_SYMBOL_STR(__memzero) },
 	{ 0x706d051c, __VMLINUX_SYMBOL_STR(del_timer_sync) },
 	{ 0x5f754e5a, __VMLINUX_SYMBOL_STR(memset) },
