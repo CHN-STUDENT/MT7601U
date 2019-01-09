@@ -1165,7 +1165,8 @@ int RtmpOSFileRead(RTMP_OS_FD osfd, char *pDataPtr, int readLen)
         /* The object must have a read method */
         if (osfd->f_op /*&& osfd->f_op->read*/) {
                 //return osfd->f_op->read(osfd, pDataPtr, readLen, &osfd->f_pos);
-                return vfs_read(osfd, pDataPtr, readLen, &osfd->f_pos);
+                //return vfs_read(osfd, pDataPtr, readLen, &osfd->f_pos);
+		kernel_read(osfd, pDataPtr, readLen, &osfd->f_pos);
         } else {
                 DBGPRINT(RT_DEBUG_ERROR, ("no file read method\n"));
                 return -1;
